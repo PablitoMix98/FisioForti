@@ -873,7 +873,7 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 1fr;
   gap: 44px;
   margin-bottom: 52px;
 }
@@ -919,6 +919,25 @@ footer {
 
 .footer-col ul li a:hover {
   color: var(--teal-light);
+}
+
+.footer-services-container {
+  display: flex;
+  column-gap: 44px;
+  row-gap: 0;
+  flex-wrap: wrap;
+}
+
+.footer-signature-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-signature {
+  font-size: 0.8rem;
+  color: var(--teal-light);
+  font-weight: 500;
 }
 
 .footer-bottom {
@@ -1210,6 +1229,10 @@ footer {
     flex-direction: column;
     gap: 16px;
     text-align: center;
+  }
+
+  .footer-signature-container {
+    justify-content: center;
   }
 }
 
